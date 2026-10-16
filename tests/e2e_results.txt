@@ -1,0 +1,18 @@
+PASS | CREATE guest | Guest registered
+PASS | UNIQUE phone rejected by DB | Phone or ID may already exist.  1062 (23000): Duplicate entr
+PASS | SEARCH guests | 
+PASS | UPDATE guest | Guest updated
+PASS | Find Available Rooms | 9 room(s) available for these dates.
+PASS | BOOK room | Booking #7 created. | Total payable: Rs 9,600.00
+PASS | Double booking blocked | This room is already booked for the selected dates.
+PASS | Room Available after future booking | room 202
+PASS | Room Occupied after Check-In (trigger) | room 202
+PASS | Room Available after Check-Out (trigger) | room 202
+PASS | Auto-calc bill + payment | Rs 9600.00
+PASS | DELETE payment | 
+PASS | FK RESTRICT blocks room-type delete | 
+PASS | DELETE guest (cascade) | 
+PASS | Report: Room Availability by Type | 4 rows
+PASS | Report: Revenue by Payment Method | 2 rows
+PASS | Report: Guest Booking Summary | 5 rows
+PASS | Report: Pending Payments | 2 rows
